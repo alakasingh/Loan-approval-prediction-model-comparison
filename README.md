@@ -195,9 +195,4 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 ---
 
-##  Notes & Limitations
 
-- **No hyperparameter tuning** was performed. GridSearchCV or Optuna could push scores even higher for models like SVM and Gradient Boosting.
-- **Class imbalance** (62/38 split) is mild and handled naturally by stratified splitting; no SMOTE or resampling was needed.
-- **Feature engineering** (e.g., debt-to-income ratio, total assets sum) was not explored and could further improve weaker models.
-- The dataset appears to be synthetic/structured — real-world loan data would likely contain missing values, outliers, and stronger class imbalance.
